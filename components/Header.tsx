@@ -5,8 +5,9 @@ import Image from 'next/image'
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs"
 import useWindowDimensions from '@/lib/useWindowDimensions'
 
+
 export default function Header() {
-    const { height, width } = useWindowDimensions();
+    const { width, height } = useWindowDimensions();
 
     return (
         <section className="bg-[#023047] min-h-screen">

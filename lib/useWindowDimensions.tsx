@@ -1,26 +1,33 @@
-import { useState, useEffect } from 'react';
+/**
+ * // useWindowDimension.ts
+ * * This hook returns the viewport/window height and width
+ */
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
+import { useEffect, useState } from 'react';
 
-export default function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+type WindowDimentions = {
+    width: number | undefined;
+    height: number | undefined;
+};
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    if(typeof window !== 'undefined') {
+const useWindowDimensions = (): WindowDimentions => {
+    const [windowDimensions, setWindowDimensions] = useState<WindowDimentions>({
+        width: undefined,
+        height: undefined,
+    });
+    useEffect(() => {
+        function handleResize(): void {
+            setWindowDimensions({
+                width: window.innerWidth,
+                height: window.innerHeight,
+            });
+        }
+        handleResize();
         window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }
-  }, []);
+        return (): void => window.removeEventListener('resize', handleResize);
+    }, []); // Empty array ensures that effect is only run on mount
 
-  return windowDimensions;
-}
+    return windowDimensions;
+};
+
+export default useWindowDimensions;
