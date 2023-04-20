@@ -3,8 +3,11 @@ import Button from './Button'
 import Navbar from './Navbar'
 import Image from 'next/image'
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs"
+import useWindowDimensions from '@/lib/useWindowDimensions'
 
 export default function Header() {
+    const { height, width } = useWindowDimensions();
+
     return (
         <section className="bg-[#023047] min-h-screen">
             <div className="container mx-auto pt-8 px-5 lg:px-10 md:px-10 xl:px-0">
@@ -100,6 +103,9 @@ export default function Header() {
 
                 <div className="text-center mt-16 xl:mt-5 ">
                     <p className="text-sm pb-5 xl:text-lg font-bold">Let’s build quality product in programming and design with my service</p>
+                    <p>
+                        width: {width} ~ height: {height}
+                    </p>
                 </div>
                 {/* </Header */}
 
