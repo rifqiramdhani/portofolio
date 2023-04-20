@@ -56,10 +56,10 @@ export default function Navbar() {
 
             <div className="w-6/12 hidden lg:block">
                 <ul className="flex space-x-20 justify-end">
-                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg"><a href="#home">Home</a></li>
-                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg"><a href="#about">About</a></li>
-                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg"><a href="#portofolio">Portofolio</a></li>
-                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg"><a href="#contact">Contact</a></li>
+                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg xl:text-xl"><a href="#home">Home</a></li>
+                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg xl:text-xl"><a href="#about">About</a></li>
+                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg xl:text-xl"><a href="#portofolio">Portofolio</a></li>
+                    <li className="font-medium text-xl transition duration-500 hover:underline lg:text-lg xl:text-xl"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>

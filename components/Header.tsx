@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <section className="bg-[#023047] min-h-screen">
-            <div className="container mx-auto pt-8 px-5 lg:px-10 md:px-10 xl:px-0">
+            <div className="container mx-auto pt-8 px-5 md:px-10 lg:px-16 xl:px-0">
                 {/* Navbar */}
                 <Navbar />
                 {/* </Navbar */}
@@ -52,7 +52,7 @@ export default function Header() {
 
 
                     <div className="w-full md:w-6/12">
-                        <Image src="./img/polygon.svg" alt="Image polygon" width={136} height={136} className="w-20 h-20 absolute z-0 top-[61%] mobile-m:top-[69%] mobile-l:top-[76%] sm:top-[109%] lg:w-[136px] lg:h-[136px] lg:left-6 xl:left-10 md:w-[93px] md:h-[93px] md:top-[161px] xl:top-[46%]"/>
+                        <Image src="./img/polygon.svg" alt="Image polygon" width={136} height={136} className="w-20 h-20 absolute z-0 top-[356px] mobile-m:top-[404px] mobile-l:top-[442px] sm:top-[629px] md:top-[173px] lg:top-[208px] xl:top-[306px] md:w-[93px] md:h-[93px] lg:w-[100px] lg:h-[100px] md:left-[9px] lg:left-[31px] xl:left-10   "/>
                         
                         <div className="relative z-1 top-10">
                             <h1 className="text-xl font-medium xl:text-4xl my-2 sm:text-2xl md:text-2xl lg:text-2xl">Hi, I&apos;m Moch Rifqi Ramdhani</h1>
@@ -104,9 +104,6 @@ export default function Header() {
 
                 <div className="text-center mt-16 xl:mt-5 ">
                     <p className="text-sm pb-5 xl:text-lg font-bold">Let’s build quality product in programming and design with my service</p>
-                    <p>
-                        width: {width} ~ height: {height}
-                    </p>
                 </div>
                 {/* </Header */}
 
