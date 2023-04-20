@@ -51,7 +51,7 @@ export default function Header() {
 
 
                     <div className="w-full md:w-6/12">
-                        <Image src="./img/polygon.svg" alt="Image polygon" width={136} height={136} className="w-20 h-20 absolute z-0 top-[61%] mobile-m:top-[69%] mobile-l:top-[76%] lg:w-[136px] lg:h-[136px] lg:left-6 xl:left-10 md:w-[93px] md:h-[93px] md:top-[161px] xl:top-[46%]"/>
+                        <Image src="./img/polygon.svg" alt="Image polygon" width={136} height={136} className="w-20 h-20 absolute z-0 top-[61%] mobile-m:top-[69%] mobile-l:top-[76%] sm:top-[109%] lg:w-[136px] lg:h-[136px] lg:left-6 xl:left-10 md:w-[93px] md:h-[93px] md:top-[161px] xl:top-[46%]"/>
                         
                         <div className="relative z-1 top-10">
                             <h1 className="text-xl font-medium xl:text-4xl my-2 sm:text-2xl md:text-2xl lg:text-2xl">Hi, I&apos;m Moch Rifqi Ramdhani</h1>
@@ -108,10 +108,6 @@ export default function Header() {
                     </p>
                 </div>
                 {/* </Header */}
-
-
-
-
 
             </div>
         </section>
