@@ -25,7 +25,7 @@ export default function Footer() {
                 </div>
                 <div className="w-3/5 bg-white shadow-md rounded px-16 py-5 text-black">
                     <div className="font-bold text-base">
-                        <Image src={"/img/gmail.svg"} alt='Gmail' width={30} height={30} className='inline mr-3'/>
+                        <Image src="./img/gmail.svg" alt='Gmail' width={30} height={30} className='inline mr-3'/>
 
                         Send Email
                     </div>

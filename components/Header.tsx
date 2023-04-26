@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Button from './Button'
 import Navbar from './Navbar'
 import Image from 'next/image'
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs"
 import useWindowDimensions from '@/lib/useWindowDimensions'
-
+import Typed from 'typed.js';
 
 export default function Header() {
     const { width, height } = useWindowDimensions();
+    const el = useRef(null);
+
+    useEffect(()  =>  {
+        const typed = new Typed(el.current, {
+            strings: ['<h1 class="text-xl font-medium xl:text-4xl my-2 sm:text-2xl md:text-2xl lg:text-2xl">Hi, I&apos;m Moch Rifqi Ramdhani</h1>', '<h2 class="text-2xl font-bold xl:text-6xl text-[#FB8500] my-2 sm:text-3xl md:text-4xl lg:text-4xl">as WEB DEVELOPER</h2>'],
+            typeSpeed: 50,
+            loop: true,
+            fadeOut: true,
+        });
+
+        return () => {
+            // Destroy Typed instance during cleanup to stop animation
+            typed.destroy();
+        };
+    }, []);
 
     return (
         <section className="bg-[#023047]">
@@ -55,8 +70,10 @@ export default function Header() {
                         <Image src="./img/polygon.svg" alt="Image polygon" width={136} height={136} className="w-20 h-20 absolute z-0 top-[356px] mobile-m:top-[404px] mobile-l:top-[442px] sm:top-[629px] md:top-[173px] lg:top-[208px] xl:top-[306px] md:w-[93px] md:h-[93px] lg:w-[100px] lg:h-[100px] md:left-[9px] lg:left-[31px] xl:left-10   "/>
                         
                         <div className="relative z-1 top-10">
-                            <h1 className="text-xl font-medium xl:text-4xl my-2 sm:text-2xl md:text-2xl lg:text-2xl">Hi, I&apos;m Moch Rifqi Ramdhani</h1>
-                            <h2 className="text-2xl font-bold xl:text-6xl text-[#FB8500] my-2 sm:text-3xl md:text-4xl lg:text-4xl">WEB DEVELOPER</h2>
+                            <span ref={el} />
+                            
+
+                            
                             <p className="text-xs text-justify xl:text-base my-2 md:text-sm lg:text-base">
                                 Building robust web applications with a holistic approach to development, blending creativity and technology to craft exceptional user experiences. Proficient in front-end and back-end languages, delivering efficient solutions that drive results.
                             </p>
