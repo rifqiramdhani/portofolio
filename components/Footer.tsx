@@ -11,7 +11,7 @@ export default function Footer() {
 
                     <Image src="/img/cloud.svg" alt="Cloud" width={10} height={10} className="w-[134px] absolute z-1 top-0 left-[6.25rem]" />
 
-                    <h1 className="font-bold text-[44px] relative z-10">Let's <span className="text-[#FB8500]">Work</span> Together</h1>
+                    <h1 className="font-bold text-[44px] relative z-10">Let&apos;s <span className="text-[#FB8500]">Work</span> Together</h1>
                     <h2 className="font-bold text-[28px] relative z-10">Get in touch with me</h2>
 
                     <div className="flex space-x-[12px]">
