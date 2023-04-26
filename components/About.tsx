@@ -9,12 +9,12 @@ export default function About() {
 
                 <div className="flex items-center">
                     <div className="w-6/12">
-                        <Image src="/img/about-me.svg" width={100} height={100} alt="Photo about me" className="w-[355.91px] h-[537px] mx-auto" />
+                        <Image src="./img/about-me.svg" width={100} height={100} alt="Photo about me" className="w-[355.91px] h-[537px] mx-auto" />
                     </div>
                     <div className="w-6/12">
                         <h1 className="font-medium text-2xl">Welcome</h1>
                         <h2 className="font-semibold text-4xl relative">
-                            <Image src="/img/cloud.svg" alt="Cloud" width={100} height={100} className="absolute -z-10 left-24"/>
+                            <Image src="./img/cloud.svg" alt="Cloud" width={100} height={100} className="absolute -z-10 left-24"/>
                             About <span className="text-[#FB8500]">Me</span>
                         </h2>
 
