@@ -1,5 +1,9 @@
 import About from '@/components/About'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import Project from '@/components/Project'
+import Service from '@/components/Service'
+import Skill from '@/components/Skill'
 import Head from 'next/head'
 
 export default function Home() {
@@ -20,6 +24,24 @@ export default function Home() {
       {/* About me */}
       <About />
       {/* </About me */}
+
+      {/* Skill */}
+      <Skill />
+      {/* </Skill */}
+
+
+      {/* Project */}
+      <Project />
+      {/* </Project */}
+
+
+      {/* Service */}
+      <Service />
+      {/* </Service */}
+
+      {/* Footer */}
+      <Footer />
+      {/* </Footer */}
 
 
     </main>

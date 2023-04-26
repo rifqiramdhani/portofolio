@@ -10,7 +10,7 @@ export default function Header() {
     const { width, height } = useWindowDimensions();
 
     return (
-        <section className="bg-[#023047] min-h-screen">
+        <section className="bg-[#023047]">
             <div className="container mx-auto pt-8 px-5 md:px-10 lg:px-16 xl:px-0">
                 {/* Navbar */}
                 <Navbar />
@@ -69,7 +69,7 @@ export default function Header() {
                     <div className="w-6/12 hidden md:block">
                         <div className="flex relavite">
 
-                            <div className="w-full md:w-11/12 lg:w-11/12 xl:w-full">
+                            <div className="w-full md:w-11/12 lg:w-full">
                                 <Image src="./img/photo-header.svg" width={100} height={100} alt="My picture" className="w-full h-full" />
                             </div>
 

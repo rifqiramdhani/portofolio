@@ -13,7 +13,12 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1536px',
+      '2xl': '1536px', 
+    },
+    extend: {
+      boxShadow: {
+        'text': '0px 3px 0px 0px rgba(0, 0, 0, 0.25)'
+      }
     }
   },
   plugins: [],
